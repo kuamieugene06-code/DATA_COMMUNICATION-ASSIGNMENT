@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Data Communication assignment portfolio — Eugene Moore Aidoo" />
+  <title>Data Communication Assignment | Eugene Moore Aidoo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Background effects -->
+  <motion class="bg-grid" aria-hidden="true"></motion>
+  <div class="bg-glow bg-glow--1" aria-hidden="true"></motion>
+  <div class="bg-glow bg-glow--2" aria-hidden="true"></div>
+
+  <!-- NAVIGATION -->
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary">
+      <a href="#hero" class="brand">
+        <span class="brand__icon" aria-hidden="true">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+            <path d="M2 17l10 5 10-5M2 12l10 5 10-5"/>
+          </svg>
+        </span>
+        <span class="brand__text">Data<span class="brand__accent">Comm</span></span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+
+      <ul class="nav__links" id="nav-menu">
+        <li><a href="#about" class="nav__link">About</a></li>
+        <li><a href="#topics" class="nav__link">Topics</a></li>
+        <li><a href="#telegraph" class="nav__link">Telegraph</a></li>
+        <li><a href="#inspiration" class="nav__link">Inspiration</a></li>
+        <li><a href="#resources" class="nav__link">Resources</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section id="hero" class="hero">
+      <motion class="hero__content reveal">
+        <p class="hero__eyebrow">
+          <span class="badge">PUIT/24210096</span>
+          <span class="badge badge--outline">Data Communication</span>
+        </p>
+        <h1 class="hero__title">
+          Connecting the World,<br />
+          <span class="gradient-text">One Packet at a Time</span>
+        </h1>
+        <p class="hero__subtitle">
+          An academic portfolio exploring signals, protocols, networks, and the evolution of digital communication.
+        </p>
+        <motion class="hero__actions">
+          <a href="#topics" class="btn btn--primary">Explore Topics</a>
+          <a href="#resources" class="btn btn--ghost">View Resources</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section section--about">
+      <div class="container">
+        <header class="section__header reveal">
+          <h2 class="section__title">About Me</h2>
+          <p class="section__lead">Student profile &amp; academic focus</p>
+        </header>
+
+        <article class="profile-card glass reveal">
+          <div class="profile-card__media">
+            <div class="profile-card__frame">
+              <img src="me.png" alt="Profile photo of Eugene Moore Aidoo" class="profile-photo" width="200" height="200" />
+            </motion>
+            <ul class="profile-stats" aria-label="Quick facts">
+              <li>
+                <span class="profile-stats__label">Program</span>
+                <span class="profile-stats__value">Information Technology</span>
+              </li>
+              <li>
+                <span class="profile-stats__label">Focus</span>
+                <span class="profile-stats__value">Networking &amp; Data Comm</span>
+              </li>
+            </ul>
+          </div>
+          <div class="profile-card__body">
+            <h3 class="profile-card__name">Eugene Moore Aidoo</h3>
+            <p class="profile-card__id">Student ID: <strong>PUIT/24210096</strong></p>
+            <p class="bio">
+              I am an Information Technology student with a strong interest in how data moves
+              across networks and systems. My studies cover networking, database management,
+              operating systems, advanced Java, and data communication. Outside academics I enjoy
+              troubleshooting systems, learning about emerging tech, and helping others
+              understand how the internet works.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- TOPICS -->
+    <section id="topics" class="section section--topics">
+      <div class="container">
+        <header class="section__header reveal">
+          <h2 class="section__title">What I Studied</h2>
+          <p class="section__lead">Core concepts from signals to application-layer protocols</p>
+        </header>
+
+        <div class="cards">
+          <article class="card glass reveal" data-delay="0">
+            <motion class="card__icon" aria-hidden="true">📡</span>
+            <h3 class="card__title">Signals &amp; Transmission</h3>
+            <p class="card__desc">The foundation of all communication. Data must be converted into a signal before it can travel.</p>
+            <ul class="card__list">
+              <li>Analog signals — continuous waveforms</li>
+              <li>Digital signals — discrete 0s and 1s</li>
+              <li>Bandwidth and data rate</li>
+              <li>Attenuation, noise, and distortion</li>
+              <li>Transmission media: copper, fibre optic, wireless</li>
+              <li>Simplex, half-duplex, and full-duplex modes</li>
+            </ul>
+          </article>
+
+          <article class="card glass reveal" data-delay="1">
+            <span class="card__icon" aria-hidden="true">🔗</span>
+            <h3 class="card__title">Data Link Layer</h3>
+            <p class="card__desc">Responsible for reliable node-to-node delivery of data frames between two directly connected devices.</p>
+            <ul class="card__list">
+              <li>Framing — packaging bits into frames</li>
+              <li>Error detection: parity bits, CRC</li>
+              <li>Error correction: Hamming codes</li>
+              <li>Flow control: Stop-and-Wait, Sliding Window</li>
+              <li>MAC addressing</li>
+              <li>Protocols: HDLC, PPP, Ethernet</li>
+            </ul>
+          </article>
+
+          <article class="card glass reveal" data-delay="2">
+            <span class="card__icon" aria-hidden="true">🌐</span>
+            <h3 class="card__title">Network Layer &amp; IP</h3>
+            <p class="card__desc">Handles logical addressing and routing of packets from source to destination across multiple networks.</p>
+            <ul class="card__list">
+              <li>IPv4 and IPv6 addressing</li>
+              <li>Subnetting and CIDR notation</li>
+              <li>Packet switching vs circuit switching</li>
+              <li>Routing algorithms: RIP, OSPF, BGP</li>
+              <li>NAT — Network Address Translation</li>
+              <li>ICMP and ARP protocols</li>
+            </ul>
+          </article>
+
+          <article class="card glass reveal" data-delay="3">
+            <span class="card__icon" aria-hidden="true">🚚</span>
+            <h3 class="card__title">Transport Layer</h3>
+            <p class="card__desc">Provides end-to-end communication between applications running on different hosts.</p>
+            <ul class="card__list">
+              <li>TCP — reliable, connection-oriented</li>
+              <li>UDP — fast, connectionless</li>
+              <li>Port numbers and sockets</li>
+              <li>Three-way handshake (SYN, SYN-ACK, ACK)</li>
+              <li>Congestion control and flow control</li>
+              <li>Multiplexing and demultiplexing</li>
+            </ul>
+          </article>
+
+          <article class="card glass reveal" data-delay="0">
+            <span class="card__icon" aria-hidden="true">🔐</span>
+            <h3 class="card__title">Security &amp; Encryption</h3>
+            <p class="card__desc">Protecting data as it travels across potentially untrusted networks.</p>
+            <ul class="card__list">
+              <li>Symmetric encryption: AES, DES</li>
+              <li>Asymmetric encryption: RSA, public/private keys</li>
+              <li>TLS/SSL handshake process</li>
+              <li>Digital signatures and certificates</li>
+              <li>Firewalls and intrusion detection</li>
+              <li>Common attacks: MitM, DoS, phishing</li>
+            </ul>
+          </article>
+
+          <article class="card glass reveal" data-delay="1">
+            <span class="card__icon" aria-hidden="true">📶</span>
+            <h3 class="card__title">Wireless &amp; Mobile Networks</h3>
+            <p class="card__desc">Communication without physical cables using radio waves and other wireless technologies.</p>
+            <ul class="card__list">
+              <li>Wi-Fi standards: 802.11a/b/g/n/ac/ax</li>
+              <li>Cellular generations: 2G, 3G, 4G LTE, 5G</li>
+              <li>Bluetooth and NFC</li>
+              <li>OFDM modulation technique</li>
+              <li>Spread spectrum: FHSS, DSSS</li>
+              <li>Challenges: interference, handover, range</li>
+            </ul>
+          </article>
+
+          <article class="card glass reveal" data-delay="2">
+            <span class="card__icon" aria-hidden="true">📚</span>
+            <h3 class="card__title">OSI &amp; TCP/IP Models</h3>
+            <p class="card__desc">Layered frameworks that standardise how different systems communicate with each other.</p>
+            <ul class="card__list">
+              <li>7 OSI layers: Physical to Application</li>
+              <li>4 TCP/IP layers and how they map</li>
+              <li>Encapsulation and de-encapsulation</li>
+              <li>Role of each layer with examples</li>
+              <li>PDUs: bits, frames, packets, segments</li>
+              <li>Why layered models matter in IT</li>
+            </ul>
+          </article>
+
+          <article class="card glass reveal" data-delay="3">
+            <span class="card__icon" aria-hidden="true">⚙️</span>
+            <h3 class="card__title">Application Layer Protocols</h3>
+            <p class="card__desc">Protocols that directly support end-user applications and services on the internet.</p>
+            <ul class="card__list">
+              <li>HTTP and HTTPS — web communication</li>
+              <li>DNS — domain name resolution</li>
+              <li>SMTP, POP3, IMAP — email protocols</li>
+              <li>FTP and SFTP — file transfer</li>
+              <li>DHCP — dynamic IP assignment</li>
+              <li>SSH — secure remote access</li>
+            </ul>
+          </article>
+        </div>
+      </motion>
+    </section>
+
+    <!-- TELEGRAPH -->
+    <section id="telegraph" class="section section--telegraph">
+      <div class="container">
+        <header class="section__header reveal">
+          <h2 class="section__title">The Electric Telegraph</h2>
+          <p class="section__lead">1837 — the first electrical data communication system</p>
+        </header>
+
+        <p class="telegraph-intro reveal">
+          The telegraph (1837) was the world's first electrical data communication system, encoding text as Morse code pulses over wire — the earliest ancestor of every modern network.
+        </p>
+
+        <!-- Timeline -->
+        <ol class="timeline reveal" aria-label="Communication evolution timeline">
+          <li class="timeline__item">
+            <span class="timeline__year">1837</span>
+            <span class="timeline__event">Electric telegraph — Morse code over wire</span>
+          </li>
+          <li class="timeline__item">
+            <span class="timeline__year">1876</span>
+            <span class="timeline__event">Telephone — voice over electrical signals</span>
+          </li>
+          <li class="timeline__item">
+            <span class="timeline__year">1969</span>
+            <span class="timeline__event">ARPANET — packet-switched networking</span>
+          </li>
+          <li class="timeline__item">
+            <span class="timeline__year">Today</span>
+            <span class="timeline__event">5G, fibre, cloud — global digital infrastructure</span>
+          </li>
+        </ol>
+
+        <figure class="diagram glass reveal" aria-label="Telegraph circuit diagram">
+          <figcaption class="diagram__caption">Signal path: sender → wire → receiver</figcaption>
+          <div class="diagram__wrap">
+            <svg viewBox="0 0 700 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="diagram-title">
+              <title id="diagram-title">Electric telegraph sender and receiver connected by signal wire</title>
+              <rect x="10" y="60" width="130" height="100" rx="8" class="svg-box svg-box--sender"/>
+              <text x="75" y="85" text-anchor="middle" class="svg-label svg-label--accent">SENDER</text>
+              <rect x="30" y="95" width="90" height="22" rx="4" class="svg-inner"/>
+              <text x="75" y="110" text-anchor="middle" class="svg-text">Morse Key</text>
+              <text x="75" y="148" text-anchor="middle" class="svg-muted">Battery</text>
+              <rect x="45" y="152" width="60" height="14" rx="3" class="svg-inner"/>
+
+              <line x1="140" y1="100" x2="560" y2="100" class="svg-wire svg-wire--signal"/>
+              <text x="350" y="93" text-anchor="middle" class="svg-muted">Signal Wire</text>
+
+              <line x1="140" y1="140" x2="560" y2="140" class="svg-wire svg-wire--ground"/>
+              <text x="350" y="158" text-anchor="middle" class="svg-muted">Return / Ground</text>
+
+              <line x1="350" y1="50" x2="350" y2="145" class="svg-pole"/>
+              <line x1="325" y1="58" x2="375" y2="58" class="svg-pole"/>
+              <circle cx="344" cy="59" r="4" class="svg-dot"/>
+              <circle cx="356" cy="59" r="4" class="svg-dot"/>
+
+              <rect x="560" y="60" width="130" height="100" rx="8" class="svg-box svg-box--receiver"/>
+              <text x="625" y="85" text-anchor="middle" class="svg-label">RECEIVER</text>
+              <rect x="580" y="95" width="90" height="22" rx="4" class="svg-inner"/>
+              <text x="625" y="110" text-anchor="middle" class="svg-text">Sounder</text>
+              <text x="625" y="148" text-anchor="middle" class="svg-muted">Paper Tape</text>
+              <rect x="595" y="152" width="60" height="14" rx="3" class="svg-inner"/>
+              <circle cx="607" cy="159" r="2.5" class="svg-dot"/>
+              <rect x="614" y="156" width="8" height="5" rx="1" class="svg-dot"/>
+              <circle cx="628" cy="159" r="2.5" class="svg-dot"/>
+              <rect x="635" y="156" width="8" height="5" rx="1" class="svg-dot"/>
+              <circle cx="649" cy="159" r="2.5" class="svg-dot"/>
+
+              <text x="350" y="200" text-anchor="middle" class="svg-morse">· · · — — — · · ·  =  SOS in Morse Code</text>
+            </svg>
+          </div>
+        </figure>
+
+        <header class="section__header section__header--sub reveal">
+          <h2 class="section__title section__title--sm">Watch: Data Communication Explained</h2>
+        </header>
+
+        <div class="video glass reveal">
+          <div class="video__aspect">
+            <iframe
+              src="https://www.youtube.com/embed/ZhEf7e4kopM"
+              title="Data Communication Explained"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              loading="lazy"
+            ></iframe>
+          </div>
+        </motion>
+      </div>
+    </section>
+
+    <!-- INSPIRATION -->
+    <section id="inspiration" class="section section--inspiration">
+      <motion class="container">
+        <header class="section__header reveal">
+          <h2 class="section__title">What Inspires Me</h2>
+          <p class="section__lead">Technology, access, and impact in Africa</p>
+        </header>
+
+        <blockquote class="quote glass reveal">
+          <p class="quote__text">
+            "The internet is the world's largest library. It's just that all the books are on the floor."
+          </p>
+          <cite class="quote__cite">— John Allen Paulos</cite>
+        </blockquote>
+
+        <p class="inspiration-body reveal">
+          I am inspired by how engineering has made it possible to send information across the globe in milliseconds.
+          From the telegraph to 5G, every leap in communication technology has changed how people live and work.
+          As an Information Technology student, studying data communication makes me appreciate the infrastructure
+          behind every app, website, and video call we use daily. My goal is to use this knowledge to help bridge
+          the digital divide in Africa.
+        </p>
+      </div>
+    </section>
+
+    <!-- RESOURCES -->
+    <section id="resources" class="section section--resources">
+      <div class="container">
+        <header class="section__header reveal">
+          <h2 class="section__title">Resources</h2>
+          <p class="section__lead">Assignment files and useful links</p>
+        </header>
+
+        <ul class="resource-grid">
+          <li class="reveal">
+            <a href="ADVANCED DATA COMMUNICATION.pdf" class="resource-card glass" target="_blank" rel="noopener noreferrer">
+              <span class="resource-card__icon" aria-hidden="true">📄</span>
+              <span class="resource-card__title">My Assignment</span>
+              <span class="resource-card__hint">Opens in new tab</span>
+            </a>
+          </li>
+          <li class="reveal" data-delay="1">
+            <a href="https://github.com/kuamieugene06-code/data-communication-assignment" class="resource-card glass" target="_blank" rel="noopener noreferrer">
+              <span class="resource-card__icon" aria-hidden="true">🐙</span>
+              <span class="resource-card__title">GitHub Repository</span>
+              <span class="resource-card__hint">Source &amp; project files</span>
+            </a>
+          </li>
+          <li class="reveal" data-delay="2">
+            <a href="https://app.onemillioncoders.gov.gh/student/level-assessment/" class="resource-card glass" target="_blank" rel="noopener noreferrer">
+              <span class="resource-card__icon" aria-hidden="true">💻</span>
+              <span class="resource-card__title">One Million Coders</span>
+              <span class="resource-card__hint">Sign up — level assessment</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p class="site-footer__text">
+        <strong>Eugene Moore Aidoo</strong> · ID: PUIT/24210096 · Data Communication Assignment · Due: 22 May 2026
+      </p>
+      <p class="site-footer__meta">© 2026 · Built for academic presentation</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
